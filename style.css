@@ -22,7 +22,7 @@ body {
 	background: #2b5876;
 	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
 	background: linear-gradient(to right, #4e4376, #2b5876);
-} 
+}
 
 .container {
 	border: 2px solid;
@@ -62,8 +62,8 @@ body {
 	padding: 10px;
 	border-radius: 20px;
 	color: #fff;
-    background-color: #4e4376;
-    margin-top:20px
+	background-color: #4e4376;
+	margin-top: 20px;
 }
 .btn:hover {
 	color: #4e4376;
@@ -82,7 +82,7 @@ body {
 }
 
 .banner-img {
-	background: url(./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
 
 	background-size: cover;
 	background-position: center;
@@ -125,8 +125,8 @@ h3 {
 
 a:link,
 a:visited {
-    /* color: #c5742f; */
-    color: rgb(208, 230, 227);
+	/* color: #c5742f; */
+	color: rgb(208, 230, 227);
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition: border-bottom 0.2s, color 0.2s;
@@ -143,8 +143,8 @@ a:active {
 
 .social-links a:link,
 .social-links a:visited {
-    /* color: #c5742f; */
-    color: rgb(208, 230, 227);
+	/* color: #c5742f; */
+	color: rgb(208, 230, 227);
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition: border-bottom 0.2s, color 0.2s;
@@ -158,4 +158,3 @@ a:active {
 	color: rgba(241, 88, 28, 0.801);
 	/* border-bottom: 1px; */
 }
-
