@@ -3,26 +3,25 @@
 	margin: 0;
 	height: auto;
 	list-style: none;
-	box-sizing: border-box;
+	box-sizing: inherit;
 	text-decoration: none;
 	font-family: "Lato", sans-serif;
 }
 
-/* html{
-    font-family: "Lato", "Arial", sans-serif;
-} */
+html{
+    font-size: 62.5%;
+    /* font-size: 10px */
+} 
 
-/* body {
-	background: #0F2027; 
-background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  
-background: linear-gradient(to left, #2C5364, #203A43, #0F2027); 
-} */
+
 
 body {
 	background: #2b5876;
 	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
 	background: linear-gradient(to right, #4e4376, #2b5876);
-	height: 100vh
+    height: 100vh;
+    box-sizing: border-box;
+    /* font-size: 10px */
 }
 
 .header{
@@ -31,10 +30,10 @@ body {
 }
 
 .container2 {
-	border: 2px solid;
+	border: .2rem solid;
 	width: 80%;
 	margin: auto;
-	box-shadow: 20px 20px 10px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 2rem 2rem 1rem .5rem rgba(0, 0, 0, 0.3);
 	border-radius: 1%;
 	box-sizing: border-box;
 }
@@ -45,30 +44,30 @@ body {
 }
 
 .main-nav {
-	/* margin-top: 35px; */
+	
 	text-align: right;
 }
 
 .main-nav li {
 	display: inline-block;
-	padding: 10px;
+	padding: 1rem;
 }
 
 
 
 .social-links {
-	/* margin-top: 20px; */
+	
 	text-align: center;
 }
 .social-links li {
 	display: inline-block;
-	/* margin-top: 6%; */
-	padding-left: 22px;
-	padding-bottom: 10px
+
+	padding-left: 2.2rem;
+	padding-bottom: 1rem
 }
 
 .banner-img {
-	background: linear-gradient(to left,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+	background: linear-gradient(to left,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(/img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
 
 	background-size: cover;
 	background-position: center;
@@ -86,28 +85,26 @@ body {
 .heading{
 	color: #fff;
 	text-transform: uppercase;
-	margin-bottom: 60px;
-	/* margin-top: 20px */
+	margin-bottom: 6rem;
+	
 }
 .heading1{
 	display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
-	letter-spacing: 20px;
+	letter-spacing: 2rem;
 	
 	animation-name: moveInLeft;
     animation-duration: 1s;
-    /* animation-delay: 0.5s; */
-    /* animation-iteration-count: 3; */
     animation-timing-function: ease-in-out
 }
 
 .heading2{
 	display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-	letter-spacing: 17.4px;
-	padding: 10px;
+	letter-spacing: 1.74rem;
+	padding: 1rem;
 
 	animation-name: moveInRight;
     animation-duration: 1s;
@@ -116,8 +113,11 @@ body {
     animation-timing-function: ease-in-out
 }
 
+.btn2{
+    font-size: 2rem
+}
 .space{
-    padding-right: 7px
+    padding-right: .7rem
 }
 
 
@@ -125,9 +125,9 @@ body {
 .btn2:visited{
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
 
@@ -137,7 +137,7 @@ body {
 
 .btn2:hover{
     transform: translateY(-3px);
-    box-shadow: 0 5px 5px rgba(245, 244, 244, 0.2);
+    box-shadow: 0 0.4rem 0.2rem rgba(245, 244, 244, 0.2);
     color: rgb(247, 243, 243)
     /* background-color: #fff */
 
@@ -145,7 +145,7 @@ body {
 
 .btn2:active{
     transform: translateY(-1px);
-    box-shadow: 0 1px 2px rgba(245, 244, 244, 0.2)
+    box-shadow: 0 .2rem .2rem rgba(245, 244, 244, 0.2)
 }
 .btn2-white{
     background-color: #3B4F76;
@@ -159,7 +159,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -189,7 +189,7 @@ body {
 @keyframes moveInButtom{
     0%{
         opacity: 0;
-        transform: translateY(30px)
+        transform: translateY(3rem)
     }
 
 
@@ -203,11 +203,11 @@ body {
 @keyframes moveInLeft{
     0%{
         opacity: 0;
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
     }
 
     80%{
-        transform: translateX(10px)
+        transform: translateX(1rem)
     }
 
 
@@ -220,11 +220,11 @@ body {
 @keyframes moveInRight{
     0%{
         opacity: 0;
-        transform: translateX(100px)
+        transform: translateX(10rem)
     }
 
     80%{
-        transform: translateX(-10px)
+        transform: translateX(-1rem)
     }
 
 
@@ -236,11 +236,11 @@ body {
 @keyframes moveUp{
     0%{
         opacity: 0;
-        transform: translateY(300px)
+        transform: translateY(30rem)
     }
 
     80%{
-        transform: translateY(-10px)
+        transform: translateY(-1rem)
     }
 
 
@@ -270,7 +270,7 @@ a:active {
 } */
 
 .socials{
-	margin-top: 130px;
+	margin-top: 13rem;
 	backface-visibility: hidden
 }
 
@@ -297,25 +297,24 @@ a:active {
 
 .social-links a:hover,
 .social-links a:active {
-	/* color: #fff; */
+	
 	color: rgba(241, 88, 28, 0.801);
-	/* border-bottom: 1px; */
+	
 	transition: all 1s
 }
 
-.arrow{
+/* .arrow{
 	position: absolute;
 	top: 98%;
 	right:80px;
 	color: #fff
 }
 .arrow-down{
-	/* color: red; */
-	/* font-size: 36px; */
+	
 	height: 35px;
 }
 .arrow a{
 	color: red;
 	font-size: 36px;
-	/* height: 35px; */
-}
+	
+} */
