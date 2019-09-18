@@ -22,9 +22,15 @@ body {
 	background: #2b5876;
 	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
 	background: linear-gradient(to right, #4e4376, #2b5876);
+	height: 100vh
 }
 
-.container {
+.header{
+	position: relative;
+	
+}
+
+.container2 {
 	border: 2px solid;
 	width: 80%;
 	margin: auto;
@@ -50,12 +56,12 @@ body {
 
 .info {
 	/* position: absolute; */
-	width: 80%;
+	width: 100%;
 	margin: auto;
-	padding: 50px;
+	padding: 40px;
 }
 
-.btn {
+.btn2 {
 	width: 80px;
 	text-align: center;
 	border: 1px;
@@ -77,12 +83,13 @@ body {
 }
 .social-links li {
 	display: inline-block;
-	margin-top: 9.5%;
+	margin-top: 6%;
 	padding-left: 22px;
+	padding-bottom: 10px
 }
 
 .banner-img {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
 
 	background-size: cover;
 	background-position: center;
@@ -91,37 +98,31 @@ body {
 }
 
 .msg {
-	padding-top: 15%;
+	padding-top: 9%;
 	/* color: #fff; */
 	text-align: center;
 }
 
-h1 {
-	margin-top: 0;
-	padding-top: 20px;
-	color: white;
-	font-size: 240%;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	word-spacing: 4px;
-	line-height: 60px;
-	font-family: "Lato", sans-serif;
+.heading{
+	color: #fff;
+    text-transform: uppercase;
+}
+.heading1{
+	display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 20px
 }
 
-h3 {
-	/* margin-top: 0; */
-	/* padding-top: 20px; */
-	color: white;
-	font-size: 18px;
-	font-style: italic;
-	/* text-transform: uppercase; */
-	letter-spacing: 1px;
-	word-spacing: 4px;
-	/* line-height: 60px */
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
+.heading2{
+	display: block;
+    font-size: 20px;
+    font-weight: 700;
+	letter-spacing: 17.4px;
+	padding: 10px
+
 }
+
 
 a:link,
 a:visited {
@@ -157,4 +158,21 @@ a:active {
 	/* color: #fff; */
 	color: rgba(241, 88, 28, 0.801);
 	/* border-bottom: 1px; */
+}
+
+.arrow{
+	position: absolute;
+	top: 98%;
+	right:80px;
+	color: #fff
+}
+.arrow-down{
+	/* color: red; */
+	/* font-size: 36px; */
+	height: 35px;
+}
+.arrow a{
+	color: red;
+	font-size: 36px;
+	/* height: 35px; */
 }
