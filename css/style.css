@@ -13,6 +13,11 @@ html {
 	/* font-size: 10px */
 }
 
+.container-fluid{
+	max-width: 100%;
+	margin: auto
+}
+
 .home-body {
 	/* background: #2b5876;
 	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
@@ -35,7 +40,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 	width: 80%;
 	margin: auto;
 	box-shadow: 2rem 2rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
-	border-radius: 1%;
+	border-radius: .5%;
 	box-sizing: border-box;
 }
 
@@ -273,7 +278,7 @@ a:active {
 
 .social-links a:hover,
 .social-links a:active {
-	color: rgba(241, 88, 28, 0.801);
+	color: rgb(59, 79, 118);
 
 	transition: all 1s;
 }
@@ -307,13 +312,15 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 }
 
 .heading-about{
-    text-align: center
+	text-align: center;
+	font-size:3rem
 }
 
 .about-me {
 	width: 80%;
     margin: auto;
-    backface-visibility: hidden;
+	backface-visibility: hidden;
+	
 }
 
 .row {
