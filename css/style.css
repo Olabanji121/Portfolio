@@ -1,0 +1,397 @@
+* {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	list-style: none;
+	box-sizing: inherit;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	/* font-size: 10px */
+}
+
+.container-fluid{
+	max-width: 100%;
+	margin: auto
+}
+
+.home-body {
+	/* background: #2b5876;
+	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to right, #4e4376, #2b5876); */
+    background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	height: 100vh;
+	box-sizing: border-box;
+	/* font-size: 10px */
+}
+
+.header {
+	position: relative;
+}
+
+.container2 {
+	border: 0.2rem solid;
+	width: 80%;
+	margin: auto;
+	box-shadow: 2rem 2rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+	border-radius: .5%;
+	box-sizing: border-box;
+}
+
+.container-nav {
+	width: 90%;
+	margin: auto;
+}
+
+.main-nav {
+	text-align: right;
+}
+
+.main-nav li {
+	display: inline-block;
+	padding: 1rem;
+}
+
+.social-links {
+	text-align: center;
+}
+.social-links li {
+	display: inline-block;
+
+	padding-left: 2.2rem;
+	padding-bottom: 1rem;
+}
+
+.banner-img {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+		url(../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	/* background-attachment: fixed; */
+}
+
+.msg {
+	padding-top: 9%;
+	/* color: #fff; */
+	text-align: center;
+}
+
+.heading {
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 6rem;
+}
+.heading1 {
+	display: block;
+	font-size: 5rem;
+	font-weight: 400;
+	letter-spacing: 2rem;
+
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+
+.heading2 {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 1.74rem;
+	padding: 1rem;
+
+	animation-name: moveInRight;
+	animation-duration: 1s;
+	/* animation-delay: 0.5s; */
+	/* animation-iteration-count: 3; */
+	animation-timing-function: ease-in-out;
+}
+
+.btn2 {
+	font-size: 1.5rem;
+}
+.space {
+	padding-right: 0.7rem;
+}
+
+.btn2:link,
+.btn2:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 10rem;
+	transition: all 0.2s;
+	position: relative;
+}
+
+.btn2:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 0.4rem 0.2rem rgba(245, 244, 244, 0.2);
+	color: rgb(247, 243, 243);
+	/* background-color: #fff */
+}
+
+.btn2:active {
+	transform: translateY(-1px);
+	box-shadow: 0 0.2rem 0.2rem rgba(245, 244, 244, 0.2);
+}
+.btn2-white {
+	background-color: #3b4f76;
+	color: #d0e6e3;
+}
+
+.btn2::after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 10rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all 2s;
+}
+
+.btn2-white::after {
+	background-color: #3b4f76;
+}
+
+.btn2:hover::after {
+	transform: scaleX(1.5) scaleY(1.6);
+	opacity: 0;
+}
+
+.btn-animi {
+	animation: moveInButtom 0.5s ease-out 0.75s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes moveInButtom {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+
+	80% {
+		transform: translateX(1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+	}
+
+	80% {
+		transform: translateX(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30rem);
+	}
+
+	80% {
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+/* a:link,
+a:visited {
+	
+	color: rgb(208, 230, 227);
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: border-bottom 0.2s, color 0.2s;
+	transition: border-bottom 0.2s, color 0.2s;
+	font-size: 18px;
+}
+
+a:hover,
+a:active {
+	
+	color: rgba(241, 88, 28, 0.801);
+	
+} */
+
+.socials {
+	margin-top: 13rem;
+	backface-visibility: hidden;
+}
+
+.social-links {
+	animation-name: moveInRight;
+	animation-duration: 1s;
+	/* animation-delay: 0.5s; */
+	/* animation-iteration-count: 3; */
+	animation-timing-function: ease-in-out;
+}
+
+.social-links a:link,
+.social-links a:visited {
+	/* color: #c5742f; */
+	color: rgb(208, 230, 227);
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: border-bottom 0.2s, color 0.2s;
+	transition: border-bottom 0.2s, color 0.2s;
+	font-size: 28px;
+}
+
+.social-links a:hover,
+.social-links a:active {
+	color: rgb(59, 79, 118);
+
+	transition: all 1s;
+}
+
+/* .arrow{
+	position: absolute;
+	top: 98%;
+	right:80px;
+	color: #fff
+}
+.arrow-down{
+	
+	height: 35px;
+}
+.arrow a{
+	color: red;
+	font-size: 36px;
+	
+} */
+
+/* ABOUT ME SECTION */
+
+.about-body {
+	background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	height: 100vh;
+	box-sizing: border-box;
+	/* font-size: 10px */
+}
+
+.heading-about{
+	text-align: center;
+	font-size:3rem
+}
+
+.about-me {
+	width: 80%;
+    margin: auto;
+	backface-visibility: hidden;
+	
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+    flex: 50%;
+    /* margin-top: 30%; */
+    
+}
+.column2 {
+    flex: 50%;
+    margin-top: 1%;
+    padding-left: 20%;
+    overflow: hidden;
+    
+}
+
+.about-photos{
+    position: relative;
+    /* padding: 1rem; */
+}
+
+.about-img{
+    margin-top: 30%;
+    width: 70%;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, 0.4);
+    border-radius: 2%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    outline-offset: 2rem;
+
+    /* animation-name: moveInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out; */
+}
+
+.p1{
+    
+    left:3.5rem;
+    top: -5rem;
+}
+.p2{
+    
+    right:-11rem;
+    top: 2rem;
+}
+.p3{
+    
+    left:20%;
+    top: 10rem;
+}
+
+.about-img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0, 0.5);
+    z-index: 20;
+    outline: 1.5rem solid #2b5876
+}
+
+.about-img:not(:hover){
+    transform: scale(.9)
+}
+
+
+.about-p{
+    padding-top: 2rem;
+    font-size: 1.9rem;
+
+    animation: moveInButtom 5s ease-out 0.75s;
+	animation-fill-mode: backwards;
+}
