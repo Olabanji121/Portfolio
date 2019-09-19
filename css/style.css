@@ -355,9 +355,9 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
     transition: all .5s;
     outline-offset: 2rem;
 
-    animation-name: moveInLeft;
+    /* animation-name: moveInLeft;
 	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out; */
 }
 
 .p1{
