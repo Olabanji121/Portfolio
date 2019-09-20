@@ -70,7 +70,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 .banner-img {
 	background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-		url(../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash-min.jpg);
+		url(../img/header.jpg);
 
 	background-size: cover;
 	background-position: center;
