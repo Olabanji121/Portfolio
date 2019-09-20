@@ -55,7 +55,8 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 .main-nav li {
 	display: inline-block;
-	padding: 1rem;
+	padding: 1.5rem;
+	font-size: 1.8rem
 }
 
 .social-links {
@@ -348,7 +349,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 }
 
 .about-img{
-    margin-top: 20%;
+    margin-top: 17%;
     width: 60%;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, 0.4);
     border-radius: 2%;
