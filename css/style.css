@@ -70,7 +70,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 .banner-img {
 	background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-		url(../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+		url(../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash-min.jpg);
 
 	background-size: cover;
 	background-position: center;
@@ -88,6 +88,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 6rem;
+	backface-visibility: hidden
 }
 .heading1 {
 	display: block;
@@ -342,18 +343,20 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 .about-photos{
     position: relative;
-    /* padding: 1rem; */
+	/* padding: 1rem; */;
+	/* backface-visibility: hidden */
 }
 
 .about-img{
-    margin-top: 30%;
-    width: 70%;
+    margin-top: 20%;
+    width: 60%;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, 0.4);
     border-radius: 2%;
     position: absolute;
     z-index: 10;
     transition: all .5s;
-    outline-offset: 2rem;
+	outline-offset: 2rem;
+	
 
     /* animation-name: moveInLeft;
 	animation-duration: 2s;
@@ -362,29 +365,44 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 .p1{
     
-    left:3.5rem;
-    top: -5rem;
+    left:-2%;
+	top: -5rem;
+	width: 82%
 }
 .p2{
     
-    right:-11rem;
-    top: 2rem;
+    right:-14rem;
+	top: 2rem;
+	width: 82%
+	
 }
 .p3{
     
-    left:20%;
-    top: 10rem;
+    left:-14%;
+	top: 10rem;
+	width: 82%
+}
+
+.p4{
+	right: 14rem;
+	top: 9rem;
+	width: 50%;
+	animation: moveInButtom 5s ease-out 0.75s;
+	animation-fill-mode: backwards;
+	
 }
 
 .about-img:hover{
     transform: scale(1.05);
     box-shadow: 0 2.5rem 4rem rgba(0,0,0, 0.5);
     z-index: 20;
-    outline: 1.5rem solid #2b5876
+	outline: 1.5rem solid #2b5876;
+	
 }
 
 .about-img:not(:hover){
-    transform: scale(.9)
+	transform: scale(.9);
+	/* transition: 1s */
 }
 
 
